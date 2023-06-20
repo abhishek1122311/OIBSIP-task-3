@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title> UNIT CONVERTER </title>
+        <style type = "text/css">
+            .unit    {
+                height : 12cm ;
+                width : 18cm ;
+                background-color: antiquewhite ;
+                margin-top: 3cm ;
+                margin-left: 7.5cm ;
+                padding: 2% ;
+            }
+            input   {
+                margin-top: 1cm ;
+                margin-left: 2cm ;
+                height: 0.75cm ;
+                width: 6cm ;
+                padding-top: 4px ;
+                font-weight: 600 ;
+            }
+            label   {
+                margin-top: -0.1cm ;
+                margin-left: 2cm ;
+                font-size: 20px ;
+                font-family: 'Times New Roman', Times, serif ;
+                color: rgb(255, 115, 0) ;
+            }
+            button  {
+                height: 0.8cm ;
+                width: 3cm ;
+                font-size: 17px ;
+                color:rgb(6, 59, 75) ;
+                background-color: aqua ;
+                font-family: 'Times New Roman', Times, serif ;
+                border-style: solid ;
+                border-color: black ;
+                margin-left: 2cm ;
+            }
+            #demo   {
+                margin-top: 1.5cm ;
+                margin-left: 2cm ;
+                color: brown ;
+                font-size: 25px ;
+                font-family: 'Times New Roman', Times, serif ;
+                font-weight: 650 ;
+            }
+            #dem  {
+                margin-top: 0.3cm ;
+                margin-left: 2cm ;
+                color: black ;
+                font-size: 17px ;
+                font-family: 'Times New Roman', Times, serif ;
+                font-weight: 500 ;
+            }
+            #de  {
+                margin-top: 0.3cm ;
+                margin-left: 2cm ;
+                color: black ;
+                font-size: 17px ;
+                font-family: 'Times New Roman', Times, serif ;
+                font-weight: 500 ;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "unit">
+        <center><p style="font-size: 22px ; color: rgb(255, 0, 34) ; font-family: 'Times New Roman', Times, serif ;
+        font-weight: bolder ;"> Temperature &nbsp;Converter</p> </center><br><br><br>
+        <label>Enter the value (in celsius) </label><br>
+        <input type = "number" id = "a" name="a" required>
+        <button onclick="fff()">Results</button>
+        <br><br>
+         <p id = "demo"> </p>
+        <script>
+            function fff()  {
+                 var x = document.getElementById('a').value ;
+                 var t = parseInt(x) ;
+                 var y = 1.8*t +32 ;
+                 var z = t + 273.15 ;
+                document.getElementById('demo').innerHTML = "celsius :- "+x+"<br><br>"+" Farenheit :- "+y+"<br><br>"+" Kelvin :- "+z ;
+                }
+        </script> 
+        </div>
+    </body>
+</html>
